@@ -1,0 +1,420 @@
+:root {
+    --white: #fff;
+    --black1: #000;
+    --black2: #111;
+    --darkgray: #222;
+    --primary1: #ffe41b;
+    --primary2: #e6d346;
+    --secondary1: #581bff;
+    --secondary2: #7146e6;
+    --tertiary1: #ff1bc2;
+    --success: #21eb54; 
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: var(--black1);
+    min-height: 100%;
+    min-width: 280px;
+  }
+  
+  h1,
+  h3,
+  span,
+  p {
+    color: var(--white);
+  }
+  
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    min-height: 800px;
+    background-image: url("assets/mainImage.jpg");
+    background-repeat: no-repeat;
+    background-size: 62%;
+    background-position: center ;
+  }
+  
+  .welcome-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0 1rem;
+  }
+  
+  .welcome-container h1 {
+    font-size: 3.4rem;
+  }
+  
+  .welcome-container h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 720px;
+    text-align: center;
+    margin: 0 auto 1rem;
+  }
+  
+  .welcome-container span {
+    margin: 0.4rem auto 1rem;
+    color: var(--tertiary1);
+    font-size: 1.6rem;
+    width: 720px;
+    text-align: center;
+  }
+  
+  .welcome-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary1);
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0.4rem;
+    color: var(--black1);
+    font-size: 1rem;
+    transition: all .5s ease-in-out;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .subscribe-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .welcome-container a:hover {
+    cursor: pointer;
+    box-shadow: 0 0 48px 0 var(--secondary1);
+  }
+  
+  .subscribe-container a {
+    color: var(--primary2);
+    text-decoration: none;
+  }
+  
+  .subscribe-container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subscribe-container button {
+    padding: 0.2rem 0.4rem;
+    background: var(--tertiary1);
+    border: none;
+    outline: none;
+    border-radius: 0 4px 4px 0;
+    color: var(--white);
+    font-size: 1rem;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+  }
+  
+  .subscribe-container button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 48px 0 var(--tertiary1);
+  }
+  
+  input {
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .input-container form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  
+  
+  
+  .subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 800px;
+  }
+  
+  .time-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 800px;
+    background: var(--primary1);
+  
+  }
+  
+  .time-section div a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: .4rem;
+      background: var(--tertiary1);
+      text-decoration: none;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      transition: all 0.5s ease;
+      text-transform: uppercase;
+  }
+  .time-section div a:hover{
+    box-shadow: 0  0 48px 6px var(--tertiary1);
+  
+  }
+  
+  .time-section h1 {
+    font-size: 2rem;
+    color: var(--black2);
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 160px;
+    margin: 0.4rem;
+    padding: 1rem;
+    background: var(--black2);
+    border-radius: 4px;
+  }
+  
+  .card span {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  
+  .card p {
+    color: var(--primary2);
+  }
+  
+  
+  .opacity-effect {
+    opacity: (0.2);
+  }
+  
+  .deals-container {
+    display: flex;
+  }
+  
+  .deals-container h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .deals-container h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary2);
+    text-align: center;
+    margin: 0 0.2rem;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 24vh;
+    min-height: 240px;
+    background: var(--primary1);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    width: 240px;
+    color: var(--black1);
+  }
+  
+  footer div span {
+    color: var(--tertiary1);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  footer div a {
+    color: var(--black1);
+    font-size: 1.12rem;
+    text-decoration: none;
+  }
+  
+  footer div a:hover{
+    transform: scale(1.22);
+  } 
+  
+  footer div p {
+    color: var(--black1);
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  footer div a:hover {
+    font-weight: 500;
+  }
+  
+  .social-container a, .links-container a{
+    transition: all .3s ease-a7ff4fin-out;
+  }
+  
+  .subscribed{
+    color:var(--success);
+    font-size: .88rem;
+    margin: 1rem auto;
+  }
+  
+  @media(max-width: 1080px){
+    .welcome-section{
+      background-size: 88%;
+      padding: 1rem;
+    }
+  }
+  
+  @media(max-width: 720px){
+  
+    .welcome-section{
+      background-size: 108%;
+      padding: 1rem;
+    }
+  
+    .welcome-container h1{
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .welcome-container span{
+      font-size: 1.32rem;
+      width: 100%;
+      margin: 1rem;
+      
+    }
+  
+   
+    .cards-container{
+      flex-direction: column;
+    }
+    
+    .time-section h1{
+      font-size: 1.4rem;
+      margin: 1rem;
+      text-align: center;
+    }
+  
+    .time-section div a{
+      font-size: 1rem;
+      padding: .4rem;
+      height: 40px;
+    }
+  
+    .time-section h1 {
+      margin-top: -2rem;
+    }
+  
+    .card{
+      width: 146px;
+      height: 120px;
+    }
+  
+    .subscribe-container{
+      flex-direction: column;
+    }
+  
+    .subscribe-container h1{
+      font-size: 2rem;
+      margin: 1rem;
+      text-align: center;
+    }
+  
+    .deals-container{
+      flex-direction: column;
+    }
+  
+    .deals-container h1{
+      margin: 0 auto;
+    }
+  
+    .subscribe-section{
+      height: 56vh;
+      align-items: center;
+    }
+  
+    .input-container form{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .input-container input{
+      border-radius: 4px 4px 0 0;
+    }
+  
+    .input-container button{
+      border-radius: 0 0 4px 4px;
+    }
+  
+    footer{
+      flex-direction: column;
+      align-items: center;
+      height: 44vh;
+      min-height: 440px;
+    }
+  
+    footer span{
+      font-size: 1rem;
+    }
+  
+    footer div{
+      margin: .4rem auto
+    }
+  
+  }
