@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/mainIcon.png" type="image/x-icon">
-    <title>Maratona Dev</title>
+    <title>The Candy Shop</title>
 </head>
 
 <body>
@@ -19,34 +19,59 @@
             <div class="welcome-container">
                 <h1>The Candy Shop</h1>
                 <span>Itens com até 90% de desconto, aproveite!</span>
-                <a href='#time-section'>Ver promoções</a>
+                <a href='#cards-offers'>Ver promoções</a>
+            </div>
+        </section>
+        <section class="box1">
+            <div class="cards-offers" id="cards-offers">
+                <div class="card-product">
+                    <img src="assets/candykorn.jpg" alt="Candy Korn" class="product-img"/>
+                    <p class="product-text">Candy Korn (kg)</p>
+                    <p class="product-price">R$ 2,00</p>
+                </div>
+                <div class="card-product">
+                    <img src="assets/gummybears.jpg" alt="Gummy Bears" class="product-img"/>
+                    <p class="product-text">Gummy Bears (kg)</p>
+                    <p class="product-price">R$ 1,50</p>
+                </div>
+                <div class="card-product">
+                    <img src="assets/jellybeans.jpg" alt="Jelly Beans" class="product-img"/>
+                    <p class="product-text">Jelly Beans (kg)</p>
+                    <p class="product-price">R$ 3,00</p>
+                </div>
+            </div>
+        </section>
+        <section class="sub-section">
+            <div class="sub-container">
+                <a href='#info-container'>Quero receber mais promoções</a>
             </div>
         </section>
         <section class="subscribe-section">
             <div class="subscribe-container">
                 <div class="info-container" id='info-container'>
-                    <h1>{ Maratona Dev }</h1>
+                    <h1>Tha Candy Shop</h1>
                     <div class="deals-container">
-                        <h3>Até</h3>
-                        <h1>60%</h1>
-                        <h3>de desconto se matriculando agora!</h3>
+                        <h3>Inscreva-se para receber descontos de até </h3>
+                        <h1>90% de desconto </h1>
+                        <h3>aqui!</h3>
                     </div>
-                    <div id='input-container' class="input-container">
-                        <form action="">
-                            <input type="email" required placeholder="seu melhor e-mail">
-                            <button id='subscribe-btn' type="submit">Estou dentro</button>
+                    <div id="content">
+                        <form id="form">
+                            <input type="text" placeholder="nome" id="nome">
+                            <input type="text" placeholder="e-mail" id="email">
+                            <input type="submit" value="CADASTRAR">
                         </form>
                     </div>
                     <span class="subscribed"></span>
-                    <a href='#'>Seguir para a plataforma</a>
+                    <a href='#'>Voltar para o topo</a>
                 </div>
             </div>
         </section>
         <footer>
             <div class="links-container">
                 <span>Links úteis</span>
-                <a href="#">Plataforma</a>
-                <a href="#">Maratona Dev</a>
+                <a href="#">The Candy Shop</a>
+                <a href="#cards-offers">Itens em promoção</a>
             </div>
             <div class="social-container">
                 <span>Nossas redes sociais</span>
@@ -61,7 +86,7 @@
                 <span>Contato</span>
                 <p>candy@candyshop.com</p>
                 <p>+55 16 999998989</p>
-                <p>Candy Cane - SP</p>
+                <p>Candy Kane - SP</p>
             </div>
         </footer>
     </main>

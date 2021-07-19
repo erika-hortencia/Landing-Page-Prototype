@@ -1,21 +1,26 @@
-const input = document.querySelector('input')
-const form = document.querySelector('form')
-const timeMinutes = document.getElementById('minutes')
-const timeSeconds = document.getElementById('seconds')
-const subscribed = document.querySelector('.subscribed')
+const form = document.getElementById('form')
 
-function newSubscribe(){
-    if(input.value !== null || input.value !== ''){
-        localStorage.setItem('maratona_dev:new-subscribe', 
-        JSON.stringify(input.value))
-        if(localStorage.getItem('maratona_dev:new-subscribe')){
-            subscribed.innerText = 'Sua inscrição foi realizada com sucesso!'
-        }
-    }
-}
-
-
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) =>{
     e.preventDefault()
-    newSubscribe()
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let data = {
+        nome,
+        email,
+    }
+    let convertData = JSON.stringify(data);
+
+    localStorage.setItem('lead', convertData)
+
+    let content = document.getElementById('content');
+
+    let carregando = `<p>carregando...</p>`
+
+    let pronto = `<p>Tudo pronto! Obrigado pela visita!</p>`
+
+    content.innerHTML = carregando
+
+    setTimeout(() =>{
+        content.innerHTML = pronto
+    }, 2000)
 })

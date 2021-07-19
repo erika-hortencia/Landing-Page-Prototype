@@ -3,12 +3,9 @@
     --black1: #000;
     --black2: #111;
     --darkgray: #222;
-    --primary1: #ffe41b;
-    --primary2: #e6d346;
-    --secondary1: #581bff;
-    --secondary2: #7146e6;
-    --tertiary1: #ff1bc2;
-    --success: #21eb54; 
+    --pink: #e11bc4;
+    --brightpink: #ffc6ff;
+    --redhighlight: #ffff00;
   }
   
   * {
@@ -20,19 +17,93 @@
   
   html {
     scroll-behavior: smooth;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   body {
-    background: var(--black1);
+    background-image: url("assets/mainImage.jpg");
     min-height: 100%;
     min-width: 280px;
   }
+
+  .section-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+
+.card-container {
+    text-align: center;
+    border-radius: 25px;
+    padding: 50px;
+    width: 500px;
+    display: grid;
+    color: #fff;
+}
+
+.cards-offers {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-product {
+    margin: 25px;
+    height: auto;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.product-img {
+    max-width: 190px;
+    height: auto;
+}
+
+.product-text {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.product-price {
+    font-weight: bolder;
+    font-size:xx-large;
+    color: var(--pink);
+}
+
+.card-text {
+    font-size: xx-large;
+    margin-bottom: 75px;
+    color: var(--pink);
+}
+
+form{
+    display: block;
+}
   
   h1,
   h3,
   span,
   p {
-    color: var(--white);
+    color: var(--pink);
   }
   
   .welcome-section {
@@ -42,7 +113,7 @@
     justify-content: flex-start;
     height: 100vh;
     min-height: 800px;
-    background-image: url("assets/mainImage.jpg");
+    background-image: url("assets/blackFridayImage.png");
     background-repeat: no-repeat;
     background-size: 62%;
     background-position: center ;
@@ -72,7 +143,7 @@
   
   .welcome-container span {
     margin: 0.4rem auto 1rem;
-    color: var(--tertiary1);
+    color: var(--white);
     font-size: 1.6rem;
     width: 720px;
     text-align: center;
@@ -82,7 +153,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--primary1);
+    background: var(--white);
     border: none;
     text-decoration: none;
     border-radius: 4px;
@@ -102,36 +173,14 @@
     padding: 1rem;
   }
   
-  .welcome-container a:hover {
-    cursor: pointer;
-    box-shadow: 0 0 48px 0 var(--secondary1);
-  }
-  
   .subscribe-container a {
-    color: var(--primary2);
+    color: var(--white);
     text-decoration: none;
   }
   
   .subscribe-container h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-  }
-  
-  .subscribe-container button {
-    padding: 0.2rem 0.4rem;
-    background: var(--tertiary1);
-    border: none;
-    outline: none;
-    border-radius: 0 4px 4px 0;
-    color: var(--white);
-    font-size: 1rem;
-    transition: all 0.5s ease;
-    text-transform: uppercase;
-  }
-  
-  .subscribe-container button:hover {
-    cursor: pointer;
-    box-shadow: 0 0 48px 0 var(--tertiary1);
   }
   
   input {
@@ -156,8 +205,6 @@
     margin: 1rem auto;
   }
   
-  
-  
   .subscribe-section {
     display: flex;
     flex-direction: column;
@@ -165,43 +212,6 @@
     justify-content: center;
     height: 100vh;
     min-height: 800px;
-  }
-  
-  .time-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    min-height: 800px;
-    background: var(--primary1);
-  
-  }
-  
-  .time-section div a{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: .4rem;
-      background: var(--tertiary1);
-      text-decoration: none;
-      border: none;
-      outline: none;
-      border-radius: 4px;
-      color: var(--white);
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      transition: all 0.5s ease;
-      text-transform: uppercase;
-  }
-  .time-section div a:hover{
-    box-shadow: 0  0 48px 6px var(--tertiary1);
-  
-  }
-  
-  .time-section h1 {
-    font-size: 2rem;
-    color: var(--black2);
   }
   
   .cards-container {
@@ -219,7 +229,7 @@
     height: 160px;
     margin: 0.4rem;
     padding: 1rem;
-    background: var(--black2);
+    background: var(--white);
     border-radius: 4px;
   }
   
@@ -229,7 +239,7 @@
   }
   
   .card p {
-    color: var(--primary2);
+    color: var(--white);
   }
   
   
@@ -251,7 +261,7 @@
   .deals-container h1 {
     font-size: 1.4rem;
     font-weight: 500;
-    color: var(--primary2);
+    color: var(--redhighlight);
     text-align: center;
     margin: 0 0.2rem;
   }
@@ -263,7 +273,7 @@
     width: 100%;
     height: 24vh;
     min-height: 240px;
-    background: var(--primary1);
+    background: var(--brightpink);
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
@@ -279,7 +289,7 @@
   }
   
   footer div span {
-    color: var(--tertiary1);
+    color: var(--pink);
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
   }
@@ -308,11 +318,6 @@
     transition: all .3s ease-a7ff4fin-out;
   }
   
-  .subscribed{
-    color:var(--success);
-    font-size: .88rem;
-    margin: 1rem auto;
-  }
   
   @media(max-width: 1080px){
     .welcome-section{
@@ -343,22 +348,6 @@
    
     .cards-container{
       flex-direction: column;
-    }
-    
-    .time-section h1{
-      font-size: 1.4rem;
-      margin: 1rem;
-      text-align: center;
-    }
-  
-    .time-section div a{
-      font-size: 1rem;
-      padding: .4rem;
-      height: 40px;
-    }
-  
-    .time-section h1 {
-      margin-top: -2rem;
     }
   
     .card{
